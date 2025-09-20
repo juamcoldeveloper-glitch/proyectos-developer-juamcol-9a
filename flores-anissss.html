@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Anitaaaa❤️🍓</title>
+    <style>
+        /* CSS incrustado */
+        body {
+            margin: 0;
+            background: linear-gradient(135deg, #6a0dad, #ff69b4, #000);
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .flowers {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .flower {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: #f5c518;
+            border-radius: 50%;
+            animation: floatFlower 3s infinite ease-in-out;
+        }
+
+        .flower__leaf {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #4caf50;
+            border-radius: 50%;
+        }
+
+        .flower__leaf--1 {
+            top: -25px;
+            left: 0;
+        }
+
+        .flower__leaf--2 {
+            left: 25px;
+            top: 0;
+        }
+
+        @keyframes floatFlower {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .message {
+            position: absolute;
+            bottom: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 40px;
+            font-weight: 800;
+            text-align: center;
+            text-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4;
+        }
+    </style>
+</head>
+<body>
+    <div class="flowers">
+        <div class="flower">
+            <div class="flower__leaf flower__leaf--1"></div>
+            <div class="flower__leaf flower__leaf--2"></div>
+        </div>
+        <div class="flower">
+            <div class="flower__leaf flower__leaf--1"></div>
+            <div class="flower__leaf flower__leaf--2"></div>
+        </div>
+        <div class="flower">
+            <div class="flower__leaf flower__leaf--1"></div>
+            <div class="flower__leaf flower__leaf--2"></div>
+        </div>
+    </div>
+    <div class="message">Estas flores amarillas son para ti... Anita🤍</div>
+</body>
+</html>
